@@ -1,0 +1,10 @@
+.logo {
+  color: var(--yellow);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  strong {
+    color: inherit;
+  }
+}

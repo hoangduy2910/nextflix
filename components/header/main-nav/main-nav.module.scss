@@ -1,0 +1,45 @@
+.navItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .navItem {
+    position: relative;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-left: 1rem;
+    transition: all 1s ease;
+    border-bottom: 1px solid var(--main-bg-color);
+
+    .subItems {
+      opacity: 0;
+      position: absolute;
+      top: 5vh;
+      left: 0;
+      transition: all 1s ease;
+      min-width: 10rem;
+      background-color: var(--black);
+
+      .subItem {
+        padding: 0.5rem 1rem;
+        text-transform: capitalize;
+
+        &:hover a {
+          color: var(--yellow);
+          cursor: pointer;
+        }
+      }
+    }
+
+    &:hover {
+      color: var(--yellow);
+      border-color: var(--yellow);
+      cursor: pointer;
+
+      .subItems {
+        opacity: 1;
+      }
+    }
+  }
+}

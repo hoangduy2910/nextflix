@@ -1,0 +1,15 @@
+.searchBar {
+  input {
+    padding: 0.7rem;
+    background-color: var(--black);
+    border: none;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--main-bg-color);
+    transition: all 0.3s ease;
+
+
+    &:focus {
+      border: 0.1rem solid var(--yellow);
+    }
+  }
+}

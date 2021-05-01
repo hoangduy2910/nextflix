@@ -1,0 +1,11 @@
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6rem;
+
+  .star {
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+    color: var(--yellow);
+  }
+}

@@ -1,0 +1,49 @@
+.section {
+  margin: 2rem 0;
+
+  .title {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .item {
+      padding-bottom: 0.5rem;
+      font-size: 0.8rem;
+      margin-right: 1rem;
+      text-transform: uppercase;
+      transition: all 0.4s ease;
+      border-bottom: 1px solid var(--main-bg-color);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .active {
+      color: var(--yellow);
+      border-color: var(--yellow);
+    }
+
+    .icons {
+      font-size: 2rem;
+      justify-self: flex-end;
+      margin-left: auto;
+
+      i {
+        margin-right: 1rem;
+        transition: all 0.2s ease;
+
+        &:hover {
+          cursor: pointer;
+          color: var(--yellow);
+        }
+      }
+    }
+  }
+}
