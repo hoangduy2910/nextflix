@@ -1,8 +1,9 @@
 import { IMAGE_BASE_URL, IMAGE_BACKDROP_URL } from "../../utils/image-url";
-import CastSlider from "../cast-slider/cast-slider";
 import classes from "./movie-detail.module.scss";
 
 const MovieDetail = (props) => {
+  const { movie } = props;
+
   return (
     <div className={classes.detail}>
       <div className={classes.backdrop}>
@@ -38,9 +39,6 @@ const MovieDetail = (props) => {
             <button className={classes.watch}>Watch now</button>
           </div>
         </div>
-      </div>
-      <div className={classes.casts}>
-        <CastSlider casts={casts} />
       </div>
     </div>
   );

@@ -1,5 +1,8 @@
+import React from "react";
+
 import { MovieService } from "../../services/movie-service";
 import MovieDetail from "../../components/movie-detail/movie-detail";
+import CastSlider from "../../components/cast-slider/cast-slider";
 
 export const getStaticProps = async (context) => {
   const { id } = context.params;
@@ -29,7 +32,12 @@ const Movie = (props) => {
     return <div>Loading...</div>;
   }
 
-  return <MovieDetail />;
+  return (
+    <React.Fragment>
+      <MovieDetail movie={movie} />
+      <CastSlider casts={casts} />
+    </React.Fragment>
+  );
 };
 
 export default Movie;

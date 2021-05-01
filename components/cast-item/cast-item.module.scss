@@ -1,0 +1,26 @@
+.cast {
+  margin: 1rem;
+
+  .image {
+    margin-bottom: 0.6rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .info {
+    .name {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 0.2rem;
+    }
+
+    .character {
+      color: var(--yellow);
+    }
+  }
+}
