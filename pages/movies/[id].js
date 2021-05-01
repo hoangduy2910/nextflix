@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 
 import { MovieService } from "../../services/movie-service";
 import MovieDetail from "../../components/movie-detail/movie-detail";
@@ -34,6 +35,10 @@ const Movie = (props) => {
 
   return (
     <React.Fragment>
+      <Head>
+        <title>{movie.title}</title>
+        <meta name="description" content={movie.overview} />
+      </Head>
       <MovieDetail movie={movie} />
       <CastSlider casts={casts} />
     </React.Fragment>
